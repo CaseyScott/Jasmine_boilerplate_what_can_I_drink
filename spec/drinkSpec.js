@@ -35,13 +35,13 @@ describe("My whatCanIDrink function", function() {
         }); 
         
         it("should return drink whisky when called as whatCanIDrink(30)", function() {
-            var result = whatCanIDrink(30)
+            var result = whatCanIDrink(29)
             expect(result).toBe("Drink Whisky");
         });
         
         it("should be unable to return a drink when called as whatCanIDrink(40)", function() {
             var result = whatCanIDrink(40)
-            expect(result).toBe("Sorry. I can't tell what drink because that age is incorrect!");
+            expect(result).toBe("Sorry. I cant tell what drink because that age is incorrect!");
         });
         
         it("should contain Drink when called as whatCanIDrink(17)", function() {
